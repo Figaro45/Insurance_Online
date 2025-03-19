@@ -1,0 +1,182 @@
+.body {
+  margin: 0px;
+}
+
+.header {
+  margin-top: 32px;
+  margin-bottom: 33px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  height: 32px;
+  margin-right: 192px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 114%;
+  color: #000;
+}
+
+.UL_li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.Nav_li {
+  cursor: pointer;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.7);
+  margin-right: 24px;
+}
+
+.Contacts {
+  margin-right: 40px;
+}
+
+.Telefon_li {
+  display: flex;
+}
+
+.service_li {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 138%;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.span_Telefon {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  text-align: right;
+  color: #000;
+}
+
+.block_Telefon {
+  display: flex;
+}
+
+.Servis {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 138%;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.Span_telefon {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  text-align: right;
+  color: #000;
+}
+
+.Button_call {
+  cursor: pointer;
+  border: none;
+  margin-left: 32px;
+  border-radius: 6px;
+  padding: 12px 24px;
+  height: 44px;
+  background: #00aca5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 133%;
+  text-align: center;
+  color: #fff;
+  margin-right: 40px;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 798px;
+  background: #7dd83f;
+}
+
+.main_img {
+  width: 100%;
+  height: 798px;
+}
+
+.block_Car {
+  width: 50%;
+}
+
+.block_insurance {
+  position: relative;
+  width: 50%;
+}
+
+.block_h1 {
+  position: absolute;
+  width: 445px;
+  height: 471px;
+  top: 186px;
+  left: 125px;
+}
+
+.h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.p_h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
+}
+
+.btn_Insure {
+  display: flex;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  text-align: center;
+  color: #fff;
+  border: none;
+  background: #00aca5;
+  width: 225px;
+  height: 56px;
+  align-items: center;
+  justify-content: space-evenly;
+}/*# sourceMappingURL=index.css.map */

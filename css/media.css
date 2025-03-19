@@ -1,0 +1,91 @@
+@media (max-width: 1469px) {
+  .logo {
+    margin-right: 100px;
+  }
+}
+@media (max-width: 1375px) {
+  .logo {
+    margin-right: 121px;
+    font-size: 21px;
+  }
+  .Nav_li {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1255px) {
+  .logo {
+    margin-right: 60px;
+  }
+}
+@media (max-width: 1200px) {
+  .main {
+    height: 587px;
+  }
+  .main_img {
+    height: 587px;
+  }
+  .p_h1 {
+    font-size: 18px;
+  }
+  .h1 {
+    font-size: 34px;
+  }
+  .block_h1 {
+    width: 341px;
+    height: 371px;
+  }
+  .nav {
+    display: none;
+  }
+  .header {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 950px) {
+  .block_h1 {
+    left: 50px;
+  }
+}
+@media (max-width: 785px) {
+  .main_img {
+    height: 485px;
+  }
+  .main {
+    height: 485px;
+  }
+  .block_h1 {
+    width: 190px;
+    top: 100px;
+  }
+  .h1 {
+    font-size: 19px;
+  }
+  .p_h1 {
+    font-size: 14px;
+  }
+  .btn_Insure {
+    font-size: 14px;
+    width: 180px;
+  }
+}
+@media (max-width: 500px) {
+  .h1 {
+    font-size: 33px;
+  }
+  .block_h1 {
+    width: 220px;
+    top: 50px;
+  }
+  .block_insurance {
+    right: 150px;
+  }
+  .main_img {
+    display: none;
+  }
+  .logo {
+    font-size: 15px;
+  }
+  .header {
+    margin-left: 15px;
+  }
+}/*# sourceMappingURL=media.css.map */
