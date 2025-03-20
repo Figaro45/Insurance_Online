@@ -183,6 +183,7 @@
 
 .section_one {
   margin-top: 120px;
+  height: 720px;
 }
 
 .container {
@@ -252,4 +253,113 @@
 .block_boy_Two {
   display: flex;
   align-items: center;
+}
+
+.section_two {
+  display: flex;
+  background: #7dd83f;
+  width: 100%;
+  height: 590px;
+  position: relative;
+}
+
+.four_block {
+  display: flex;
+  position: absolute;
+  width: 1110px;
+  height: 500px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Four_h3 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 108%;
+  text-align: center;
+  color: #fff;
+  margin: 0px 0px 24px 0px;
+}
+
+.P_Four {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bottom_block_Four {
+  width: 730px;
+  height: 138px;
+  margin-bottom: 64px;
+}
+
+.four_block_two {
+  width: 100%;
+  display: flex;
+}
+
+.block_Cart {
+  margin-right: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  width: 255px;
+  height: 188px;
+  background: #fff;
+}
+
+.CTP_h3 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  color: #000;
+  margin-left: 32px;
+  margin-top: 32px;
+}
+
+.price_p {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  color: #00aca5;
+  margin-left: 32px;
+}
+
+.cart_btn {
+  display: flex;
+  cursor: pointer;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 191px;
+  height: 40px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 133%;
+  text-align: center;
+  color: #fff;
+  background: #00aca5;
+  margin-left: 32px;
+}
+
+.span_p_two {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.7);
+  margin-left: 8px;
+}
+
+.container_Two {
+  height: 590px;
+  align-items: flex-end;
 }/*# sourceMappingURL=index.css.map */
