@@ -76,6 +76,32 @@
   }
 }
 @media (max-width: 1150px) {
+  .clients_p {
+    font-size: 18px;
+  }
+  .DTP_p {
+    font-size: 15px;
+  }
+  .DTP_h3 {
+    font-size: 18px;
+  }
+  .block_h3 {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .Advantages {
+    font-size: 18px;
+  }
+  .Why_h2 {
+    font-size: 34px;
+    width: 100%;
+  }
+  .block_percent {
+    width: 80%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(286px, 1fr));
+  }
   .four_block {
     width: 800px;
   }
@@ -196,6 +222,15 @@
   }
 }
 @media (max-width: 500px) {
+  .Advantages {
+    font-size: 15px;
+  }
+  .clients_p {
+    font-size: 15px;
+  }
+  .Why_h2 {
+    font-size: 25px;
+  }
   .Four_h3 {
     font-size: 25px;
   }

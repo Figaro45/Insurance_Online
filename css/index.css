@@ -369,4 +369,111 @@
   width: 100%;
   height: 516px;
   margin: 0px auto;
+}
+
+.section_three {
+  width: 100%;
+  height: 826px;
+}
+
+.container_Three {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  align-items: center;
+}
+
+.block_three {
+  display: flex;
+  justify-content: center;
+  width: 1110px;
+  height: 586px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block_h3 {
+  width: 720px;
+  height: 214px;
+  margin-bottom: 64px;
+}
+
+.Advantages {
+  margin-top: 0px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 130%;
+  text-align: center;
+  color: #00aca5;
+  margin-bottom: 0px;
+}
+
+.Why_h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 106%;
+  text-align: center;
+  color: #000;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.clients_p {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 0px;
+  width: 100%;
+}
+
+.block_percent {
+  width: 1110px;
+  height: 308px;
+  display: flex;
+}
+
+.percent_div {
+  margin-right: 30px;
+  display: flex;
+  width: 255px;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img_Percent {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 48px;
+}
+
+.DTP_h3 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 130%;
+  text-align: center;
+  color: #000;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.DTP_p {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 0px;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
