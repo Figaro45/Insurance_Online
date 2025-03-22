@@ -253,6 +253,10 @@
   }
 }
 @media (max-width: 500px) {
+  .input_text {
+    padding: 1px;
+    height: 53px;
+  }
   .block_h2 h3 {
     font-size: 25px;
   }
