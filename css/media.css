@@ -76,6 +76,12 @@
   }
 }
 @media (max-width: 1150px) {
+  .block_h2 h3 {
+    font-size: 34px;
+  }
+  .section_three {
+    height: 1000px;
+  }
   .clients_p {
     font-size: 18px;
   }
@@ -160,8 +166,15 @@
   }
 }
 @media (max-width: 785px) {
+  .section_three {
+    height: 1300px;
+  }
+  .block_three {
+    position: relative;
+    bottom: 300px;
+  }
   .section_two {
-    height: 1200px;
+    height: 1300px;
   }
   .main_img {
     height: 485px;
@@ -185,6 +198,9 @@
   }
 }
 @media (max-width: 700px) {
+  .block_three {
+    bottom: 200px;
+  }
   .section_two {
     top: 100px;
   }
@@ -217,11 +233,32 @@
   }
 }
 @media (max-width: 520px) {
+  .block_input button {
+    width: 100%;
+    margin-right: 16px;
+    font-size: 15px;
+  }
+  .input_text {
+    width: 100%;
+    margin-left: 16px;
+  }
+  .form_input {
+    width: 100%;
+  }
+  .block_input {
+    width: 100%;
+  }
   .P_Four {
     width: 100%;
   }
 }
 @media (max-width: 500px) {
+  .block_h2 h3 {
+    font-size: 25px;
+  }
+  .block_h2 p {
+    font-size: 15px;
+  }
   .Advantages {
     font-size: 15px;
   }
@@ -268,6 +305,14 @@
   }
   .header {
     margin-left: 15px;
+  }
+}
+@media (max-width: 325px) {
+  .block_input button {
+    font-size: 14px;
+  }
+  .input_text {
+    font-size: 14px;
   }
 }
 @media (max-width: 317px) {
