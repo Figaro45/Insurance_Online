@@ -275,6 +275,12 @@
   }
 }
 @media (max-width: 640px) {
+  .P_Reviews_one {
+    margin-bottom: 50px;
+  }
+  .block_Girl {
+    height: 280px;
+  }
   .img_Certificates {
     margin-right: 0px;
   }
