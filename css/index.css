@@ -582,4 +582,38 @@
   line-height: 133%;
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.Certificates {
+  width: 100%;
+  height: 656px;
+}
+
+.Certificates_block {
+  display: flex;
+  justify-content: flex-start;
+  width: 1099px;
+  height: 416px;
+  flex-direction: column;
+}
+
+.h2_Certificates {
+  width: 100%;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 108%;
+  text-align: center;
+  color: #000;
+  margin-top: 0px;
+  margin-bottom: 64px;
+}
+
+.Four_Certificates {
+  width: 100%;
+  display: flex;
+}
+
+.img_Certificates {
+  margin-right: 30px;
 }/*# sourceMappingURL=index.css.map */

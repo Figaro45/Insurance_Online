@@ -76,6 +76,16 @@
   }
 }
 @media (max-width: 1150px) {
+  .h2_Certificates {
+    font-size: 32px;
+  }
+  .Four_Certificates {
+    width: 100%;
+    display: grid;
+    grid-gap: 50px;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(286px, 1fr));
+  }
   .block_h2 h3 {
     font-size: 34px;
   }
@@ -232,6 +242,11 @@
     height: 700px;
   }
 }
+@media (max-width: 640px) {
+  .img_Certificates {
+    margin-right: 0px;
+  }
+}
 @media (max-width: 520px) {
   .block_input button {
     width: 100%;
@@ -253,6 +268,9 @@
   }
 }
 @media (max-width: 500px) {
+  .h2_Certificates {
+    font-size: 25px;
+  }
   .input_text {
     padding: 1px;
     height: 53px;
