@@ -377,6 +377,9 @@
   }
 }
 @media (max-width: 325px) {
+  .P_Reviews_one {
+    width: 250px;
+  }
   .block_input button {
     font-size: 14px;
   }
