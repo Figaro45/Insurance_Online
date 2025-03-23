@@ -616,4 +616,104 @@
 
 .img_Certificates {
   margin-right: 30px;
+}
+
+.Reviews {
+  width: 100%;
+  height: 843px;
+}
+
+.block_Reviews {
+  width: 1110px;
+  height: 643px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.h3_Reviews {
+  width: 100%;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 106%;
+  text-align: center;
+  color: #000;
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+
+.P_Reviews_one {
+  margin-top: 0px;
+  width: 100%;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 80px;
+}
+
+.block_girl_two {
+  width: 100%;
+  height: 409px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.block_Girl {
+  width: 100%;
+  height: 347px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0px;
+  margin-right: 30px;
+}
+
+.imgGirl {
+  margin-top: 40px;
+}
+
+.P_Reviews {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.block_Name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.h3_Name {
+  width: 100%;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  text-align: center;
+  color: #000;
+}
+
+.Span_name {
+  width: 100%;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 138%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
 }/*# sourceMappingURL=index.css.map */
