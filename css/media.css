@@ -76,6 +76,9 @@
   }
 }
 @media (max-width: 1150px) {
+  .h3_Order_Onlain h3 {
+    font-size: 32px;
+  }
   .h3_Name {
     font-size: 15px;
   }
@@ -266,15 +269,10 @@
     height: 700px;
   }
 }
-@media (max-width: 638px) {
-  .Certificates {
-    height: 1600px;
-  }
-  .Certificates_block {
-    bottom: 500px;
-  }
-}
 @media (max-width: 640px) {
+  .block_Order_Onlain {
+    padding: 0px 25px 0px 25px;
+  }
   .P_Reviews_one {
     margin-bottom: 50px;
   }
@@ -283,6 +281,23 @@
   }
   .img_Certificates {
     margin-right: 0px;
+  }
+}
+@media (max-width: 638px) {
+  .Certificates {
+    height: 1600px;
+  }
+  .Certificates_block {
+    bottom: 500px;
+  }
+}
+@media (max-width: 618px) {
+  .block_Reviews {
+    position: relative;
+    bottom: 50px;
+  }
+  .Reviews {
+    height: 1000px;
   }
 }
 @media (max-width: 520px) {
@@ -306,6 +321,15 @@
   }
 }
 @media (max-width: 500px) {
+  .list_Polis {
+    font-size: 15px;
+  }
+  .h3_Order_Onlain p {
+    font-size: 15px;
+  }
+  .h3_Order_Onlain h3 {
+    font-size: 25px;
+  }
   .block_Girl {
     margin-right: 0px;
   }
@@ -383,6 +407,9 @@
   }
 }
 @media (max-width: 325px) {
+  .h3_Order_Onlain h3 {
+    font-size: 22px;
+  }
   .P_Reviews_one {
     width: 250px;
   }
