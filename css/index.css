@@ -616,6 +616,8 @@
 }
 
 .img_Certificates {
+  width: 255px;
+  height: 300px;
   margin-right: 30px;
 }
 
@@ -679,6 +681,8 @@
 }
 
 .imgGirl {
+  width: 64px;
+  height: 64px;
   margin-top: 40px;
 }
 
@@ -874,4 +878,65 @@
   border-radius: 31px;
   background-color: #00aca5;
   background-image: url("../img/круг.png");
+}
+
+.footer {
+  width: 100%;
+  height: 340px;
+}
+
+.block_footer {
+  display: flex;
+  width: 500px;
+  height: 180px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block_top_img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.img_Facebook {
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  margin-right: 10px;
+}
+
+.footer_ul {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.li_footer {
+  margin-right: 40px;
+  cursor: pointer;
+  list-style: none;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.Contacts_li {
+  margin-right: 0px;
+}
+
+.name_footer {
+  margin: 0px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 133%;
+  color: rgba(0, 0, 0, 0.6);
 }/*# sourceMappingURL=index.css.map */
