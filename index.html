@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Строховая онлайн</title>
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,20 +19,27 @@
 <body class="body">
     <!-- шапка сайта -->
     <header class="header" id="header">
-        <div class="logo">Страхование онлайн</div>
+        <div class="logo search_Scrolling" data-goto="#header">Страхование онлайн</div>
+
+        <!-- Бургер меню -->
+        <div class="burger_menu">
+            <span></span>
+        </div>
+
         <nav class="nav">
             <ul class="UL_li">
-                <li class="Nav_li">О компании</li>
-                <li class="Nav_li">Новости</li>
-                <li class="Nav_li">Помощь</li>
-                <li class="Nav_li">Отзывы</li>
-                <li class="Nav_li Contacts">Контакты</li>
+                <li class="Nav_li search_Scrolling" data-goto="#main">О компании</li>
+                <li class="Nav_li search_Scrolling" data-goto="#section_three">Новости</li>
+                <li class="Nav_li search_Scrolling" data-goto="#section_four">Помощь</li>
+                <li class="Nav_li search_Scrolling" data-goto="#Reviews">Отзывы</li>
+                <li class="Nav_li Contacts search_Scrolling" data-goto="#section_four">Контакты</li>
             </ul>
             <div class="block_Telefon">
                 <h3 class="Servis">Cлужба продаж<br><span class="Span_telefon">+7 495 123-45-67</span>
                 </h3>
             </div>
-            <button class="Button_call" type="button">Заказать звонок</button>
+            <button class="Button_call search_Scrolling" type="button" data-goto="#section_four">Заказать
+                звонок</button>
         </nav>
     </header>
 
@@ -43,8 +52,9 @@
             <div class="block_h1">
                 <h1 class="h1">Страхование вашего автомобиля</h1>
                 <p class="p_h1">КАСКО, ОСАГО и другие виды страхования имущества и транспортных стредств</p>
-                <button class="btn_Insure" type="button">Застраховать<img src="img/arrow.png" alt="button"
-                        loading="lazy" class="img_Arrow"></button>
+                <button class="btn_Insure search_Scrolling" type="button"
+                    data-goto="#section_order_online">Застраховать<img src="img/arrow.png" alt="button" loading="lazy"
+                        class="img_Arrow"></button>
             </div>
         </div>
     </main>
@@ -270,26 +280,26 @@
                     <img src="img/Footer/vk.png" alt="vk" loading="lazy" class="img_Facebook">
                 </div>
                 <ul class="footer_ul">
-                    <li class="li_footer">
+                    <li class="li_footer search_Scrolling" data-goto="#main">
                         О компании
                     </li>
-                    <li class="li_footer">
+                    <li class="li_footer search_Scrolling" data-goto="#section_three">
                         Новости
                     </li>
-                    <li class="li_footer">
+                    <li class="li_footer search_Scrolling" data-goto="#section_four">
                         Помощь
                     </li>
-                    <li class="li_footer Contacts_li">
+                    <li class="li_footer Contacts_li search_Scrolling" data-goto="#section_four">
                         Контакты
                     </li>
                 </ul>
                 <div class="name_footer">
-                    © 2020 Название компании
+                    © 2024 Название компании
                 </div>
             </div>
         </div>
     </footer>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>

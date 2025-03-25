@@ -21,6 +21,52 @@
         margin-right: 60px
 
 @media ( max-width: 1200px )
+    .logo
+        padding-left: 15px
+
+    .burger_menu
+        display: block
+        position: relative
+        z-index: 15
+        height: 20px
+        width: 45px
+        cursor: pointer
+        margin-right: 15px
+
+    .burger_menu span,
+    .burger_menu::before,
+    .burger_menu::after
+        left: 0px
+        position: absolute
+        height: 13%
+        width: 100%
+        transition: all 0.3s ease 0s
+        background-color: #7dd83f
+
+    .burger_menu::before,
+    .burger_menu::after
+        content: ""
+
+    .burger_menu span
+        top: 50%
+        transform: scale(1) translate(0px, -50%)
+
+    .burger_menu::before
+        top: 0px
+
+    .burger_menu::after
+        bottom: 0px
+
+    .burger_menu._active span
+        transform: scale(0) translate(0px, -50%)
+
+    .burger_menu._active::before
+        top: 50%
+        transform: rotate(-45deg) translate(0px, -50%)
+
+    .burger_menu._active::after
+        bottom: 50%
+        transform: rotate(45deg) translate(0px, 50%)
 
     .main
         height: 587px
@@ -37,12 +83,58 @@
     .block_h1
         width: 341px
         height: 371px
+        top: 90px
 
     .nav
-        display: none
+        display: flex
+        overflow: auto
+        position: fixed
+        flex-direction: column
+        z-index: 11
+        width: 100%
+        height: 100%
+        top: 0px
+        left: -100%
+        background-color: #fff
+        padding: 100px 0px 0px 0px
+        transition: left 0.3s ease 0s
+
+    .nav._active
+        left: 0px
+
+    .nav::before
+        content: ""
+        position: fixed
+        width: 100%
+        top: 0px
+        left: 0px
+        height: 70px
+        z-index: 5
+        background: #fff
 
     .header
+        display: flex
         justify-content: space-between
+        position: fixed
+        width: 100%
+        z-index: 13
+        height: 70px
+        background: #fff
+        margin: 0px
+        padding: 0px
+
+    .logo
+        margin-right: 0px
+        position: relative
+        z-index: 15
+
+    .UL_li
+        flex-direction: column
+        align-items: baseline
+
+    .UL_li > li
+        margin: 0px 0px 30px 0px
+        font-size: 21px
 
 @media ( max-width: 1170px )
     .Two_block_boy
@@ -389,7 +481,7 @@
 
     .block_h1
         width: 220px
-        top: 50px
+        top: 90px
 
     .block_insurance
         right: 150px
@@ -401,7 +493,6 @@
         font-size: 15px
 
     .header
-        margin-left: 15px
 
 @media ( max-width: 435px )
     .footer_ul

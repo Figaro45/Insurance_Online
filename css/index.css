@@ -3,6 +3,10 @@
   margin: 0px;
 }
 
+.body._lock {
+  overflow: hidden;
+}
+
 .header {
   margin-top: 32px;
   margin-bottom: 33px;
@@ -939,4 +943,8 @@
   font-size: 15px;
   line-height: 133%;
   color: rgba(0, 0, 0, 0.6);
+}
+
+.burger_menu {
+  display: none;
 }/*# sourceMappingURL=index.css.map */
