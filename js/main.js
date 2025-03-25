@@ -1,10 +1,11 @@
+/*jshint esversion: 6 */
 // меню бургер
 const MenuBurger = document.querySelector('.burger_menu');
 const nav = document.querySelector('.nav');
 
 if (MenuBurger) {
     MenuBurger.addEventListener('click', () => {
-        document.body.classList.toggle('_lock')
+        document.body.classList.toggle('_lock');
         nav.classList.toggle('_active');
         MenuBurger.classList.toggle('_active');
     });
@@ -28,16 +29,16 @@ function onMenuClick(e) {
         const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
 
         if (MenuBurger.classList.contains('_active')) {
-            document.body.classList.remove('_lock')
+            document.body.classList.remove('_lock');
             nav.classList.remove('_active');
             MenuBurger.classList.remove('_active');
-        };
+        }
 
         window.scrollTo({
             top: gotoBlockValue,
             behavior: 'smooth'
         });
-    };
-};
+    }
+}
 
 
