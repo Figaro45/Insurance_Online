@@ -172,8 +172,8 @@
                 </div>
                 <div class="block_input">
                     <form class="form_input">
-                        <input type="text" class="input_text" placeholder="+7 (000) 000-0000">
-                        <button>Оставить заявку</button>
+                        <input type="tel" class="input_text" placeholder="+7 (000) 000-0000" id="phone">
+                        <button onclick="sending()" type="button">Оставить заявку</button>
                     </form>
                     <p>Оставляя заявку, вы соглашаетесь на обработку персональных данных и с условиями бронирования
                         счёта</p>
@@ -241,20 +241,23 @@
                     <p>Заполните форму и закажите полис</p>
                 </div>
                 <form class="input_three_block">
-                    <input type="text" placeholder="Ваша имя" class="inpun_name">
-                    <input type="tel" placeholder="+7 (000) 000-0000" class="inpun_name">
-                    <input type="email" placeholder="E-mail" class="inpun_name">
+                    <input type="text" placeholder="Ваша имя" class="inpun_name" id="name_surname"
+                        data-checkbox="inputcheckbox">
+                    <input type="tel" placeholder="+7 (000) 000-0000" class="inpun_name" id="phone02"
+                        data-checkbox="inputcheckbox">
+                    <input type="email" placeholder="E-mail" class="inpun_name" id="email"
+                        data-checkbox="inputcheckbox">
                     <p class="list_Polis">Какой полис вас интересует</p>
-                    <div class="block_checbox">
-                        <input type="checkbox" id="CASCO" value="CASCO" class="CASCO_style" name="CASCO">
+                    <div class="block_checbox" id="checbox01">
+                        <input type="checkbox" id="CASCO" value="КАСКО" class="CASCO_style" name="CASCO">
                         <label for="CASCO" class="label_CASCO">КАСКО</label>
                     </div>
-                    <div class="block_checbox">
-                        <input type="checkbox" id="CTP" value="CTP" class="CASCO_style" name="CTP">
+                    <div class="block_checbox" id="checbox02">
+                        <input type="checkbox" id="CTP" value="ОСАГО" class="CASCO_style" name="CTP">
                         <label for="CTP" class="label_CASCO">ОСАГО</label>
                     </div>
-                    <div class="block_checbox checbox_bottom">
-                        <input type="checkbox" id="Life_insurance" value="Life_insurance" class="CASCO_style "
+                    <div class="block_checbox checbox_bottom" id="checbox03">
+                        <input type="checkbox" id="Life_insurance" value="Страхование жизни" class="CASCO_style "
                             name="Life_insurance">
                         <label for="Life_insurance" class="label_CASCO">Страхование жизни</label>
                     </div>
@@ -299,6 +302,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/imask.js"></script>
     <script src="js/main.js"></script>
 </body>
 

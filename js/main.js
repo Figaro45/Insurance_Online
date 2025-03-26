@@ -42,3 +42,56 @@ function onMenuClick(e) {
 }
 
 
+
+// номер телефона
+var InputMask = document.getElementById('phone');
+var InputMask01 = document.getElementById('phone02');
+var NameSurname = document.getElementById('name_surname');
+let checbox01 = document.getElementById('checbox01');
+const checkedValue = document.querySelectorAll('input[type="checkbox"]');
+const inputcheckboxAll = document.querySelectorAll('input[data-checkbox]');
+
+var phoneMask = IMask(InputMask, {
+    mask: '+{7} (000) 000-00-00'
+})
+
+var phoneMask01 = IMask(InputMask01, {
+    mask: '+{7} (000) 000-00-00'
+})
+
+
+
+// Проверка инпута Name
+let regX = /[0-9|/><.?,"'{}()~[#@!#4$%^&*-_=+№]/g
+NameSurname.oninput = function () {
+    NameSurname.value = NameSurname.value.replace(regX, '')
+}
+
+
+
+// записывает значение из checkbox
+checkedValue.forEach(item => {
+    item.addEventListener('change', function () {
+        if (item.checked) {
+            console.log(`${item.value}`);
+        } else {
+            return
+        }
+    });
+})
+
+
+
+// быстро реагирует на изменения в inpute
+InputMask.onchange = function (item) {
+    console.log(item.target.value)
+}
+
+
+function sending() {
+    if (InputMask.value) {
+        alert("отправльно")
+    } else {
+        alert('вы ничего не ввели')
+    }
+}
