@@ -47,9 +47,13 @@ function onMenuClick(e) {
 var InputMask = document.getElementById('phone');
 var InputMask01 = document.getElementById('phone02');
 var NameSurname = document.getElementById('name_surname');
+var email = document.getElementById('email');
 let checbox01 = document.getElementById('checbox01');
 const checkedValue = document.querySelectorAll('input[type="checkbox"]');
-const inputcheckboxAll = document.querySelectorAll('input[data-checkbox]');
+const popupOverlay = document.getElementById("popup-overlay");
+const popup = document.getElementById("popup");
+const blockChecbox = document.querySelectorAll("block_checbox");
+
 
 var phoneMask = IMask(InputMask, {
     mask: '+{7} (000) 000-00-00'
@@ -70,7 +74,7 @@ NameSurname.oninput = function () {
 
 
 // записывает значение из checkbox
-checkedValue.forEach(item => {
+const checkedValue01 = checkedValue.forEach(item => {
     item.addEventListener('change', function () {
         if (item.checked) {
             console.log(`${item.value}`);
@@ -84,14 +88,50 @@ checkedValue.forEach(item => {
 
 // быстро реагирует на изменения в inpute
 InputMask.onchange = function (item) {
+    console.log(item.target.value);
+}
+
+InputMask01.onchange = function (item) {
+    console.log(item.target.value)
+}
+
+NameSurname.onchange = function (item) {
+    console.log(item.target.value)
+}
+
+email.onchange = function (item) {
     console.log(item.target.value)
 }
 
 
+
+// pop-up
 function sending() {
-    if (InputMask.value) {
-        alert("отправльно")
+    if (InputMask.value.length > 16) {
+        popupOverlay.style.display = "block";
+        document.body.classList.toggle('_lock');
+        document.querySelector('.img_close').addEventListener('click', function () {
+            popupOverlay.style.display = "none";
+            document.body.classList.remove('_lock');
+        });
+
     } else {
-        alert('вы ничего не ввели')
+        document.querySelector('.input_text').classList.add('inputBorder');
+        document.querySelector('.input_text').addEventListener('click', () => {
+            document.querySelector('.input_text').classList.remove('inputBorder');
+        });
     }
 }
+
+// три попыта
+function clickBtnThree() {
+
+    if (InputMask01.value && NameSurname.value && email.value && document.getElementById('CASCO').checked || document.getElementById('CTP').checked || document.getElementById('Life_insurance').checked) {
+        alert('отправлено')
+    } else {
+        alert('видите все данные')
+    }
+
+
+}
+
