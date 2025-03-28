@@ -47,7 +47,7 @@ function onMenuClick(e) {
 var InputMask = document.getElementById('phone');
 var InputMask01 = document.getElementById('phone02');
 var NameSurname = document.getElementById('name_surname');
-var email = document.getElementById('email');
+var email = document.getElementById('email01');
 let checbox01 = document.getElementById('checbox01');
 const checkedValue = document.querySelectorAll('input[type="checkbox"]');
 const popupOverlay = document.getElementById("popup-overlay");
@@ -123,15 +123,34 @@ function sending() {
     }
 }
 
+
+
 // три попыта
 function clickBtnThree() {
 
-    if (InputMask01.value && NameSurname.value && email.value && document.getElementById('CASCO').checked || document.getElementById('CTP').checked || document.getElementById('Life_insurance').checked) {
-        alert('отправлено')
+    if (InputMask01.value.length > 16 && NameSurname.value.length >= 1 && email.value.length) {
+        document.querySelector('.label_CASCO').innerHTML = 'КАСКО *';
+        document.querySelector('.label_CTP').innerHTML = 'ОСАГО *';
+        document.querySelector('.label_Life_insurance').innerHTML = 'Страхование жизни *';
+        if (document.getElementById('CASCO').checked || document.getElementById('CTP').checked || document.getElementById('Life_insurance').checked) {
+            popupOverlay.style.display = "block";
+            document.body.classList.toggle('_lock');
+            document.querySelector('.img_close').addEventListener('click', function () {
+                popupOverlay.style.display = "none";
+                document.body.classList.remove('_lock');
+            });
+        }
+
     } else {
-        alert('видите все данные')
+        document.querySelector('.label_CASCO').innerHTML = 'КАСКО *';
+        document.querySelector('.label_CTP').innerHTML = 'ОСАГО *';
+        document.querySelector('.label_Life_insurance').innerHTML = 'Страхование жизни *';
+        InputMask01.setAttribute("required", '');
+        NameSurname.setAttribute("required", '');
+        email.setAttribute("required", '');
     }
 
-
 }
+
+
 
