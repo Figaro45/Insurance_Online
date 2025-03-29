@@ -95,7 +95,7 @@ function sending() {
 // три попыта
 function clickBtnThree() {
 
-    if (InputMask01.value.length > 16 && NameSurname.value.length >= 1 && email.value.length) {
+    if (InputMask01.value.length > 16 && NameSurname.value.length >= 1 && email.value.length > 7) {
         document.querySelector('.label_CASCO').innerHTML = 'КАСКО *';
         document.querySelector('.label_CTP').innerHTML = 'ОСАГО *';
         document.querySelector('.label_Life_insurance').innerHTML = 'Страхование жизни *';

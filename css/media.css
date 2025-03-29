@@ -523,6 +523,11 @@
   }
 }
 @media (max-width: 380px) {
+  .checkmark_green {
+    width: 31px;
+    height: 31px;
+    margin-bottom: 7px;
+  }
   .img_close {
     left: 200px;
     bottom: 100px;

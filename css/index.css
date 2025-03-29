@@ -1053,4 +1053,10 @@
 
 #email01:valid {
   border: none;
+}
+
+.checkmark_green {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 17px;
 }/*# sourceMappingURL=index.css.map */
