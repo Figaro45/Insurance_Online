@@ -249,13 +249,13 @@
                     <h3>Закажи полис онлайн</h3>
                     <p>Заполните форму и закажите полис</p>
                 </div>
-                <form class="input_three_block">
+                <form class="input_three_block" method="post" action="mail.php">
                     <input type="text" placeholder="Ваша имя" class="inpun_name" id="name_surname"
-                        data-checkbox="inputcheckbox">
+                        data-checkbox="inputcheckbox" name="your_name">
                     <input type="tel" placeholder="+7 (000) 000-0000" class="inpun_name" id="phone02"
-                        data-checkbox="inputcheckbox">
+                        data-checkbox="inputcheckbox" name="Telefon">
                     <input type="email" placeholder="E-mail" class="inpun_name" id="email01"
-                        data-checkbox="inputcheckbox">
+                        data-checkbox="inputcheckbox" name="E_mail">
                     <p class="list_Polis">Какой полис вас интересует</p>
                     <div class="block_checbox" id="checbox01">
                         <input type="checkbox" id="CASCO" value="КАСКО" class="CASCO_style" name="CASCO">
@@ -311,6 +311,7 @@
             </div>
         </div>
     </footer>
+    <script src="php/mail.php"></script>
     <script src="js/imask.js"></script>
     <script src="js/main.js"></script>
 </body>
