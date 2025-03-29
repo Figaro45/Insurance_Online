@@ -43,16 +43,13 @@ function onMenuClick(e) {
 
 
 
-// номер телефона
+// проверка всех Input
 var InputMask = document.getElementById('phone');
 var InputMask01 = document.getElementById('phone02');
 var NameSurname = document.getElementById('name_surname');
 var email = document.getElementById('email01');
-let checbox01 = document.getElementById('checbox01');
-const checkedValue = document.querySelectorAll('input[type="checkbox"]');
 const popupOverlay = document.getElementById("popup-overlay");
 const popup = document.getElementById("popup");
-const blockChecbox = document.querySelectorAll("block_checbox");
 
 
 var phoneMask = IMask(InputMask, {
@@ -72,7 +69,6 @@ NameSurname.oninput = function () {
 }
 
 
-
 // pop-up
 function sending() {
     if (InputMask.value.length > 16) {
@@ -83,7 +79,7 @@ function sending() {
             popupOverlay.style.display = "none";
             document.body.classList.remove('_lock');
             emailjs.send("service_ov6hp88", "template_iybvou5", {
-                message: InputMask.value,
+                message: InputMask.value.trim(),
             });
         });
 
@@ -112,26 +108,26 @@ function clickBtnThree() {
             });
             if (document.getElementById('CASCO').checked) {
                 emailjs.send("service_ov6hp88", "template_iybvou5", {
-                    name: `ФИО: ${NameSurname.value}`,
-                    message: `Тел: ${InputMask01.value}`,
-                    email: email.value,
-                    value1: `Полюс: ${document.getElementById('CASCO').value}`,
+                    name: `ФИО: ${NameSurname.value.trim()}`,
+                    message: `Тел: ${InputMask01.value.trim()}`,
+                    email: email.value.trim(),
+                    value1: `Полюс: ${document.getElementById('CASCO').value.trim()}`,
                 });
             }
             if (document.getElementById('CTP').checked) {
                 emailjs.send("service_ov6hp88", "template_iybvou5", {
-                    name: `ФИО: ${NameSurname.value}`,
-                    message: `Тел: ${InputMask01.value}`,
-                    email: email.value,
-                    value2: `Полюс: ${document.getElementById('CTP').value}`,
+                    name: `ФИО: ${NameSurname.value.trim()}`,
+                    message: `Тел: ${InputMask01.value.trim()}`,
+                    email: email.value.trim(),
+                    value2: `Полюс: ${document.getElementById('CTP').value.trim()}`,
                 });
             }
             if (document.getElementById('Life_insurance').checked) {
                 emailjs.send("service_ov6hp88", "template_iybvou5", {
-                    name: `ФИО: ${NameSurname.value}`,
-                    message: `Тел: ${InputMask01.value}`,
-                    email: email.value,
-                    value3: `Полюс: ${document.getElementById('Life_insurance').value}`,
+                    name: `ФИО: ${NameSurname.value.trim()}`,
+                    message: `Тел: ${InputMask01.value.trim()}`,
+                    email: email.value.trim(),
+                    value3: `Полюс: ${document.getElementById('Life_insurance').value.trim()}`,
                 });
             }
         }
