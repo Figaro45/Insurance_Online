@@ -108,26 +108,26 @@ function clickBtnThree() {
             });
             if (document.getElementById('CASCO').checked) {
                 emailjs.send("service_ov6hp88", "template_iybvou5", {
-                    name: `ФИО: ${NameSurname.value.trim()}`,
-                    message: `Тел: ${InputMask01.value.trim()}`,
-                    email: email.value.trim(),
-                    value1: `Полюс: ${document.getElementById('CASCO').value.trim()}`,
+                    name: `ФИО: ${NameSurname.value}`,
+                    message: `Тел: ${InputMask01.value}`,
+                    email: email.value,
+                    value1: `Полюс: ${document.getElementById('CASCO').value}`,
                 });
             }
             if (document.getElementById('CTP').checked) {
                 emailjs.send("service_ov6hp88", "template_iybvou5", {
-                    name: `ФИО: ${NameSurname.value.trim()}`,
-                    message: `Тел: ${InputMask01.value.trim()}`,
-                    email: email.value.trim(),
-                    value2: `Полюс: ${document.getElementById('CTP').value.trim()}`,
+                    name: `ФИО: ${NameSurname.value}`,
+                    message: `Тел: ${InputMask01.value}`,
+                    email: email.value,
+                    value2: `Полюс: ${document.getElementById('CTP').value}`,
                 });
             }
             if (document.getElementById('Life_insurance').checked) {
                 emailjs.send("service_ov6hp88", "template_iybvou5", {
-                    name: `ФИО: ${NameSurname.value.trim()}`,
-                    message: `Тел: ${InputMask01.value.trim()}`,
-                    email: email.value.trim(),
-                    value3: `Полюс: ${document.getElementById('Life_insurance').value.trim()}`,
+                    name: `ФИО: ${NameSurname.value}`,
+                    message: `Тел: ${InputMask01.value}`,
+                    email: email.value,
+                    value3: `Полюс: ${document.getElementById('Life_insurance').value}`,
                 });
             }
         }
