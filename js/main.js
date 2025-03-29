@@ -96,9 +96,11 @@ function sending() {
 function clickBtnThree() {
 
     if (InputMask01.value.length > 16 && NameSurname.value.length >= 1 && email.value.length > 7) {
-        document.querySelector('.label_CASCO').innerHTML = 'КАСКО *';
-        document.querySelector('.label_CTP').innerHTML = 'ОСАГО *';
-        document.querySelector('.label_Life_insurance').innerHTML = 'Страхование жизни *';
+        if (document.getElementById('CASCO').checked == false || document.getElementById('CTP').checked == false || document.getElementById('Life_insurance').checked == false) {
+            document.querySelector('.label_CASCO').innerHTML = 'КАСКО *';
+            document.querySelector('.label_CTP').innerHTML = 'ОСАГО *';
+            document.querySelector('.label_Life_insurance').innerHTML = 'Страхование жизни *';
+        }
         if (document.getElementById('CASCO').checked || document.getElementById('CTP').checked || document.getElementById('Life_insurance').checked) {
             popupOverlay.style.display = "block";
             document.body.classList.toggle('_lock');
@@ -144,9 +146,6 @@ function clickBtnThree() {
         }
 
     } else {
-        document.querySelector('.label_CASCO').innerHTML = 'КАСКО *';
-        document.querySelector('.label_CTP').innerHTML = 'ОСАГО *';
-        document.querySelector('.label_Life_insurance').innerHTML = 'Страхование жизни *';
         InputMask01.setAttribute("required", '');
         NameSurname.setAttribute("required", '');
         email.setAttribute("required", '');
