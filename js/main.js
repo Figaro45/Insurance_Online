@@ -73,46 +73,18 @@ NameSurname.oninput = function () {
 
 
 
-// записывает значение из checkbox
-const checkedValue01 = checkedValue.forEach(item => {
-    item.addEventListener('change', function () {
-        if (item.checked) {
-            console.log(`${item.value}`);
-        } else {
-            return
-        }
-    });
-})
-
-
-
-// быстро реагирует на изменения в inpute
-InputMask.onchange = function (item) {
-    console.log(item.target.value);
-}
-
-InputMask01.onchange = function (item) {
-    console.log(item.target.value)
-}
-
-NameSurname.onchange = function (item) {
-    console.log(item.target.value)
-}
-
-email.onchange = function (item) {
-    console.log(item.target.value)
-}
-
-
-
 // pop-up
 function sending() {
     if (InputMask.value.length > 16) {
+
         popupOverlay.style.display = "block";
         document.body.classList.toggle('_lock');
         document.querySelector('.img_close').addEventListener('click', function () {
             popupOverlay.style.display = "none";
             document.body.classList.remove('_lock');
+            emailjs.send("service_ov6hp88", "template_iybvou5", {
+                message: InputMask.value,
+            });
         });
 
     } else {
@@ -122,7 +94,6 @@ function sending() {
         });
     }
 }
-
 
 
 // три попыта
@@ -139,21 +110,30 @@ function clickBtnThree() {
                 popupOverlay.style.display = "none";
                 document.body.classList.remove('_lock');
             });
-            (function () {
-                emailjs.init({
-                    publicKey: "Dlv0Qtp0decbR-VcI",
+            if (document.getElementById('CASCO').checked) {
+                emailjs.send("service_ov6hp88", "template_iybvou5", {
+                    name: `ФИО: ${NameSurname.value}`,
+                    message: `Тел: ${InputMask01.value}`,
+                    email: email.value,
+                    value1: `Полюс: ${document.getElementById('CASCO').value}`,
                 });
-            })();
-            document.getElementById('contact_form').addEventListener('submit', function (event) {
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('service_ov6hp88', 'template_iybvou5', this)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
-            });
+            }
+            if (document.getElementById('CTP').checked) {
+                emailjs.send("service_ov6hp88", "template_iybvou5", {
+                    name: `ФИО: ${NameSurname.value}`,
+                    message: `Тел: ${InputMask01.value}`,
+                    email: email.value,
+                    value2: `Полюс: ${document.getElementById('CTP').value}`,
+                });
+            }
+            if (document.getElementById('Life_insurance').checked) {
+                emailjs.send("service_ov6hp88", "template_iybvou5", {
+                    name: `ФИО: ${NameSurname.value}`,
+                    message: `Тел: ${InputMask01.value}`,
+                    email: email.value,
+                    value3: `Полюс: ${document.getElementById('Life_insurance').value}`,
+                });
+            }
         }
 
     } else {
