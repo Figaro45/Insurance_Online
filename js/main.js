@@ -139,6 +139,21 @@ function clickBtnThree() {
                 popupOverlay.style.display = "none";
                 document.body.classList.remove('_lock');
             });
+            (function () {
+                emailjs.init({
+                    publicKey: "Dlv0Qtp0decbR-VcI",
+                });
+            })();
+            document.getElementById('contact_form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_ov6hp88', 'template_iybvou5', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
         }
 
     } else {
