@@ -106,6 +106,16 @@ function clickBtnThree() {
                 popupOverlay.style.display = "none";
                 document.body.classList.remove('_lock');
             });
+            if (document.getElementById('CASCO').checked && document.getElementById('CTP').checked && document.getElementById('Life_insurance').checked) {
+                emailjs.send("service_ov6hp88", "template_iybvou5", {
+                    name: `ФИО: ${NameSurname.value}`,
+                    message: `Тел: ${InputMask01.value}`,
+                    email: email.value,
+                    value1: `Полюс: ${document.getElementById('CASCO').value}`,
+                    value2: `Полюс: ${document.getElementById('CTP').value}`,
+                    value3: `Полюс: ${document.getElementById('Life_insurance').value}`,
+                });
+            }
             if (document.getElementById('CASCO').checked) {
                 emailjs.send("service_ov6hp88", "template_iybvou5", {
                     name: `ФИО: ${NameSurname.value}`,
@@ -130,6 +140,7 @@ function clickBtnThree() {
                     value3: `Полюс: ${document.getElementById('Life_insurance').value}`,
                 });
             }
+
         }
 
     } else {
